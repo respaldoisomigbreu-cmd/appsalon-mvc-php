@@ -7,7 +7,6 @@
 </div>
 
 <?php
-SESSION_START();
 
 if(isset($_SESSION['admin'])){ ?>
     <div class="barra-servicios">
