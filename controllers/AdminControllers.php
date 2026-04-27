@@ -6,7 +6,7 @@ use Model\AdminCita;
 use MVC\Router;
 
 
-class AdminControllers {
+class AdminController {
     public static function index(Router $router){
         SESSION_START();
         isAdmin();

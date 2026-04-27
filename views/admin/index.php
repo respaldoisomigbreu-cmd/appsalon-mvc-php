@@ -51,7 +51,7 @@
                 <p class="servicio"><?php echo $cita->servicio ; ?> <span> <?php echo $cita->precio; ?></span></p>
                 <?php 
                     $actual = $cita->id;
-                    $proximo = $citas[$key + 1]->id ?? 0;
+                    $proximo = isset($citas[$key + 1]) ? $citas[$key + 1]->id : 0;
                     if(esUltimo($actual, $proximo)){ ?>
                         <p class='total'>Total: <span>$ <?php echo $total; ?></span></p>
 
