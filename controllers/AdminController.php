@@ -8,7 +8,7 @@ use MVC\Router;
 
 class AdminController {
     public static function index(Router $router){
-        SESSION_START();
+        session_start();
        //isAdmin();
        // $nombre = $_SESSION['nombre'] ?? '';
 

@@ -30,7 +30,8 @@ function isAuth() : void {
 }
 
 function isAdmin() : void {
-    if(!isset($_SESSION['admin'])){
+    if(!isset($_SESSION['admin'])) {
         header('Location: /');
+        exit; // Detiene la ejecución inmediatamente
     }
 }
