@@ -7,7 +7,7 @@
 </div>
 
 <?php
-
+SESSION_START();
 if(isset($_SESSION['admin'])){ ?>
     <div class="barra-servicios">
         <a class="boton" href="/admin"> Ver Citas</a>
